@@ -22,20 +22,8 @@ int main()
 		a[j]+=k;
 		if (a[j]==0) t--;
 	}
-	cout<<t<<' ';
-	n=t; 
-	t=0;
+	cout<<t;
 	for (i=1000;i>=0;i--)
-	{
-		if (a[i]!=0)
-		{
-		    if (t<n)
-		    {
-	    		printf("%d %.1f ",i,a[i]);
-	    		t++;
-    		}
-	    	else printf("%d %.1f",i,a[i]);
-		}
-	}
+	if (a[i]!=0) printf(" %d %.1f",i,a[i]);
 	return 0;
 } 
